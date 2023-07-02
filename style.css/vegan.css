@@ -9,6 +9,41 @@ p {
   margin: 0;
 }
 
+@font-face {
+    font-display: swap;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/dm-sans-v13-latin-regular.woff2') format('woff2');
+}
+
+/* dm-sans-500 - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/dm-sans-v13-latin-500.woff2') format('woff2');
+}
+
+/* dm-sans-500italic - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'DM Sans';
+    font-style: italic;
+    font-weight: 500;
+    src: url('../fonts/dm-sans-v13-latin-500italic.woff2') format('woff2');
+}
+
+/* dm-sans-700 - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/dm-sans-v13-latin-700.woff2') format('woff2');
+}
+
 p:last-child {
   margin-bottom: 0;
 }
@@ -43,11 +78,12 @@ body {
 .container {
   padding-left: 20px;
   padding-right: 20px;
+ 
 }
 
 @media screen and (min-width: 375px) {
   .container {
-    width: 375px;
+    width: 335px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -55,7 +91,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    width: 704px;
     padding-left: 32px;
     padding-right: 32px;
   }
@@ -63,28 +99,24 @@ body {
 
 @media screen and (min-width: 1280px) {
   .container {
-    width: 1280px;
+    width: 1216px;
   }
 }
 
 
 /* HOW-IT-WORKS */
 
-.how-it-works {}
 
-.how-it-works-box {}
 
-/* .how-it-works-pic {
-    width: 335px;
-    height: 158px;
-} */
-
-.how-it-works-media {
-    display: block;
+.how-it-works-box {
+    display: flex;
+    row-gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
 }
 
 .how-it-works-title {
-    color: #141414;
+color: #141414;
     text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.10);
     font-size: 28px;
     font-family: DM Sans;
@@ -93,11 +125,19 @@ body {
     line-height: 32px;
     letter-spacing: -1.12px;
     text-transform: uppercase;
-    padding-bottom: 20px;
+    width: 335px;
+    
 }
 
 .how-it-works-desc {
+    display: flex;
+    row-gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    
 }
+
 
 .how-it-works-text {
     color: #141414;
@@ -108,9 +148,9 @@ body {
     font-weight: 400;
     line-height: 18px;
     letter-spacing: -0.56px;
-    padding-top: 20px;
-    gap: 20px;
-    display: block;
+    width: 335px;
+    
+    
 }
 
 @media screen and (min-width: 375px) {
@@ -119,18 +159,81 @@ body {
 
 @media screen and (min-width: 768px) {
 
-    .how-it-works-media {
-            flex-wrap: nowrap;
-            gap: 8px;
-        }
+    .how-it-works-title {
+        color: #141414;
+            text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.10);
+            font-size: 40px;
+            font-family: DM Sans;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 44px;
+            letter-spacing: -1.6px;
+            text-transform: uppercase;
+            width: 386px;
+    }
+
+.how-it-works-box {
+    row-gap: 40px;
+    column-gap: 8px;
+    margin-bottom: 100px;
+
+}
 
     .how-it-works-desc {
-        display: block;
+        flex-wrap: nowrap;
+            column-gap: 20px;
+
+            justify-content: flex-start;
     
     }
-        
+    
+        .how-it-works-text {
+            width: 317px;
+            color: #141414;
+                text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.10);
+                font-size: 18px;
+                font-family: DM Sans;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
+                letter-spacing: -0.72px;
+        }
 }
 
 @media screen and (min-width: 1280px) {
 
+    .how-it-works-title {
+        color: #141414;
+            text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.10);
+            font-size: 48px;
+            font-family: DM Sans;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 50px;
+            letter-spacing: -1.92px;
+            text-transform: uppercase;
+            width: 614px;
+    }
+
+        .how-it-works-box {
+            row-gap: 40px;
+                column-gap: 192px;
+                margin-bottom: 124px;
+        }
+
+                .how-it-works-desc {
+                    column-gap: 40px;
+                }
+
+                .how-it-works-text {
+                    color: #141414;
+                        text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.10);
+                        font-size: 18px;
+                        font-family: DM Sans;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 24px;
+                        letter-spacing: -0.72px;
+                        width: 353px;
+                }
 }
